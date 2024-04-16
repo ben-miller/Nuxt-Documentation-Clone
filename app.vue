@@ -3,6 +3,7 @@
     <NuxtLayout>
       <Header />
       <NuxtPage />
+      <Profile />
     </NuxtLayout>
   </div>
 </template>
