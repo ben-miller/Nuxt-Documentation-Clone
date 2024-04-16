@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  <Angel />
   <div>ProfileHeader component</div>
 </template>
 
