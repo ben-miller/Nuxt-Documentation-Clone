@@ -9,4 +9,5 @@
 
 <template>
   <div>Index.vue</div>
+  <ContentDoc />
 </template>
