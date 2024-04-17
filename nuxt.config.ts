@@ -18,4 +18,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
   ],
+  plugins: [
+    '~/plugins/myPlugin'
+  ],
 })
