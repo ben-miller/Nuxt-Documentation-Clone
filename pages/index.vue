@@ -1,6 +1,6 @@
 <script setup>
-  const { sayHello } = useUtils();
-  sayHello();
+  //const { sayHello } = useUtils();
+  //sayHello();
 
   definePageMeta({
     middleware: 'auth'
