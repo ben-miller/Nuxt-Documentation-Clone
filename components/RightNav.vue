@@ -1,0 +1,3 @@
+<template>
+  Right Nav
+</template>

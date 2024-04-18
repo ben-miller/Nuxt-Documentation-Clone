@@ -1,6 +1,12 @@
 <template>
   <div class="DefaultLayout">
     <NavBar />
-    <slot />
+    <div class="MainContainer">
+      <LeftNav />
+      <slot />
+      <RightNav />
+    </div>
+    <Footer />
   </div>
 </template>
+
