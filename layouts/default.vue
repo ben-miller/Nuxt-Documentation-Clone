@@ -3,7 +3,7 @@
     <NavBar />
     <div class="MainContainer">
       <LeftNav />
-      <slot />
+      <div class="bg-slate-100"><slot /></div>
       <RightNav />
     </div>
     <Footer />

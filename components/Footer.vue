@@ -1,3 +1,3 @@
 <template>
-  <div>Footer</div>
+  <div class="bg-slate-300">Footer</div>
 </template>
