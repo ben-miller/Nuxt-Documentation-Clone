@@ -6,6 +6,26 @@ const docsNavLinks = [
   { id: '', text: 'Examples', href: '' },
   { id: '', text: 'Community', href: '' },
   ];
+
+const docsGettingStartedLinks = [
+  { id: '', text: 'Introduction', href: '' },
+  { id: '', text: 'Installation', href: '' },
+  { id: '', text: 'Configuration', href: '' },
+  { id: '', text: 'Views', href: '' },
+  { id: '', text: 'Assets', href: '' },
+  { id: '', text: 'Styling', href: '' },
+  { id: '', text: 'Routing', href: '' },
+  { id: '', text: 'SEO and Meta', href: '' },
+  { id: '', text: 'Transitions', href: '' },
+  { id: '', text: 'Data fetching', href: '' },
+  { id: '', text: 'State Management', href: '' },
+  { id: '', text: 'Error Handling', href: '' },
+  { id: '', text: 'Server', href: '' },
+  { id: '', text: 'Layers', href: '' },
+  { id: '', text: 'Deployment', href: '' },
+  { id: '', text: 'Testing', href: '' },
+  { id: '', text: 'Upgrade Guide', href: '' },
+];
 </script>
 
 <template>
@@ -16,11 +36,21 @@ const docsNavLinks = [
         <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-8">
           <div class="lg:col-span-2">
             <aside>
-              <li v-for="item in docsNavLinks">
-                {{ item.text }}
-              </li>
+              <div>
+                <li v-for="item in docsNavLinks">
+                  {{ item.text }}
+                </li>
+                <div class="flex mb-6">
+                  <div class="flex border-gray-800 w-full border-t border-dashed"></div>
+                </div>
+                <nav>
+                  <li v-for="item in docsGettingStartedLinks">
+                    {{ item.text }}
+                  </li>
+                </nav>
+              </div>
             </aside>
-          </div>
+                </div>
           <div class="lg:col-span-8">
             <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-8">
               <div class="lg:col-span-8">
