@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-slate-300">
+  <header class="h-[--header-height]">
     <ul>
       <li>
         <NuxtLink to="/">Nuxt</NuxtLink>
