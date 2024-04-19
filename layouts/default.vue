@@ -26,6 +26,15 @@ const docsGettingStartedLinks = [
   { id: '', text: 'Testing', href: '' },
   { id: '', text: 'Upgrade Guide', href: '' },
 ];
+
+const tableOfContentsLinks = [
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+  { id: '', text: 'Modular', href: '' },
+  { id: '', text: 'Architecture', href: '' },
+];
 </script>
 
 <template>
@@ -57,7 +66,9 @@ const docsGettingStartedLinks = [
                 <slot />
               </div>
               <div class="lg:col-span-2 order-first lg:order-last">
-                Right Nav
+                <li v-for="item in tableOfContentsLinks">
+                  {{ item.text }}
+                </li>
               </div>
             </div>
           </div>
