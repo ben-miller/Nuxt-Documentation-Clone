@@ -1,9 +1,8 @@
 <script setup>
-  //const { sayHello } = useUtils();
-  //sayHello();
 
   definePageMeta({
-    middleware: 'auth'
+    middleware: 'auth',
+    colorMode: 'dark'
   });
   
   const response = await $fetch('/api/hello');

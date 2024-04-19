@@ -1,12 +1,31 @@
 <template>
   <div class="DefaultLayout">
     <NavBar />
-    <div class="MainContainer">
+    <main class="MainContainer text-gray-300">
       <LeftNav />
-      <div class="bg-slate-100"><slot /></div>
+      <div class="bg-blue-950" style="background-color: #020420"><slot /></div>
       <RightNav />
-    </div>
+    </main>
     <Footer />
   </div>
 </template>
 
+<style>
+main {
+  h1 {
+    @apply text-gray-100 text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-gray-100 text-2xl font-semibold;
+  }
+  p {
+    @apply text-base font-thin my-5;
+  }
+  p a {
+    @apply text-emerald-500;
+  }
+  li {
+    @apply my-2;
+  }
+}
+</style>
