@@ -1,5 +1,5 @@
 <template>
-  <header class="h-[--header-height]">
+  <header class="h-[--header-height] sticky top-0">
     <ul>
       <li>
         <NuxtLink to="/">Nuxt</NuxtLink>

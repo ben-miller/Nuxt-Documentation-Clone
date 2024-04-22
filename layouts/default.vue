@@ -34,17 +34,42 @@ const tableOfContentsLinks = [
   { id: '', text: 'Production-ready', href: '' },
   { id: '', text: 'Modular', href: '' },
   { id: '', text: 'Architecture', href: '' },
+
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+  { id: '', text: 'Modular', href: '' },
+  { id: '', text: 'Architecture', href: '' },
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+  { id: '', text: 'Modular', href: '' },
+  { id: '', text: 'Architecture', href: '' },
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+  { id: '', text: 'Modular', href: '' },
+  { id: '', text: 'Architecture', href: '' },
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+  { id: '', text: 'Modular', href: '' },
+  { id: '', text: 'Architecture', href: '' },
 ];
 </script>
 
 <template>
   <div class="DefaultLayout text-gray-300" style="background-color: #020420">
     <NavBar />
-    <main>
+    <main class="min-h-[calc(100vh-var(--header-height))]">
       <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div class="flex flex-col lg:grid lg:grid-cols-10 lg:gap-8">
           <div class="lg:col-span-2">
-            <aside>
+            <aside class="overflow-y-auto max-h-[calc(100vh-var(--header-height))] top-[var(--header-height)] sticky">
               <div>
                 <li v-for="item in docsNavLinks">
                   {{ item.text }}
@@ -65,17 +90,22 @@ const tableOfContentsLinks = [
               <div class="lg:col-span-8">
                 <slot />
               </div>
-              <div class="lg:col-span-2 order-first lg:order-last">
-                <li v-for="item in tableOfContentsLinks">
-                  {{ item.text }}
-                </li>
+              <div class="lg:col-span-2 order-first lg:order-last overflow-y-auto max-h-[calc(100vh-var(--header-height))] top-[var(--header-height)] sticky">
+                <nav>
+                  <li v-for="item in tableOfContentsLinks">
+                    {{ item.text }}
+                  </li>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <Footer />
+    <footer class="relative">
+      <div class="border-t"></div>
+      <div class="border-t">Copyright © 2016-2024 Nuxt - MIT License</div>
+    </footer>
   </div>
 </template>
 

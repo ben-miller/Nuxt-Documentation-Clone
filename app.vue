@@ -1,5 +1,4 @@
 <template>
-  <Alert />
   <div>
     <NuxtLayout>
       <NuxtPage />
