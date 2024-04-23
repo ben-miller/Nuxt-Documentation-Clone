@@ -11,7 +11,7 @@ import { PhCaretDown } from '@phosphor-icons/vue';
       <div class="HeaderLinks">
         <ul class="lg:flex">
           <li>
-            <NuxtLink to="/docs">
+            <NuxtLink to="/docs" class="text-nuxt-green-400">
             Docs
               <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
