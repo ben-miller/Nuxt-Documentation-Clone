@@ -8,6 +8,9 @@ dependencies:
   '@nuxt/content':
     specifier: ^2.12.1
     version: 2.12.1(nuxt@3.11.2)(vue@3.4.22)
+  '@phosphor-icons/vue':
+    specifier: ^2.2.1
+    version: 2.2.1(vue@3.4.22)
   nuxt:
     specifier: ^3.11.2
     version: 3.11.2(@unocss/reset@0.59.2)(floating-vue@5.2.2)(sass@1.75.0)(unocss@0.59.2)(vite@5.2.8)
@@ -1272,6 +1275,15 @@ packages:
       '@parcel/watcher-win32-arm64': 2.4.1
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
+
+  /@phosphor-icons/vue@2.2.1(vue@3.4.22):
+    resolution: {integrity: sha512-3RNg1utc2Z5RwPKWFkW3eXI/0BfQAwXgtFxPUPeSzi55jGYUq16b+UqcgbKLazWFlwg5R92OCLKjDiJjeiJcnA==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      vue: '>=3.2.39'
+    dependencies:
+      vue: 3.4.22
+    dev: false
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}

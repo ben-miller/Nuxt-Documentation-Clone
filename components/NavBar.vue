@@ -1,3 +1,7 @@
+<script setup>
+import { PhCaretDown } from '@phosphor-icons/vue';
+</script>
+
 <template>
   <header class="sticky top-0 z-50 backdrop-blur">
     <div class="h-[--header-height] mx-auto px-4 lg:px-8 max-w-7xl flex items-center justify-between gap-3">
@@ -5,15 +9,40 @@
         Nuxt logo
       </div>
       <div class="HeaderLinks">
-        <ul>
+        <ul class="lg:flex">
           <li>
-            <NuxtLink to="/">Nuxt<span class="i-ph-caret-down w-4 h-4" /></NuxtLink>
-            <NuxtLink to="/docs">Docs</NuxtLink>
-            <NuxtLink to="/integrations">Integrations</NuxtLink>
-            <NuxtLink to="/resources">Resources</NuxtLink>
-            <NuxtLink to="/showcase">Showcase</NuxtLink>
-            <NuxtLink to="/enterprise">Enterprise</NuxtLink>
-            <NuxtLink to="/blog">Blog</NuxtLink>
+            <NuxtLink to="/docs">
+            Docs
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/integrations">
+            Integrations
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/resources">
+            Resources
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/showcase">
+            Showcase
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/enterprise">
+            Enterprise
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/blog">
+            Blog
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -26,6 +55,6 @@
 
 <style scoped>
 header li a {
-  @apply px-3 text-sm/6 font-semibold;
+  @apply px-3 text-sm/6 font-semibold flex items-center gap-1;
 }
 </style>
