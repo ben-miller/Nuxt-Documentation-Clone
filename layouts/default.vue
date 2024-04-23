@@ -153,6 +153,7 @@ const solutionsLinks = [
 <style>
 :root {
   --header-height: 4rem;
+  --background-color: #020420;
 }
 main {
   h1 {

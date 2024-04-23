@@ -1,6 +1,19 @@
 <template>
   <div class="NavDropdown">
-    Nav dropdown
+    <div class="">
+      <div>
+        item 0
+      </div>
+      <div>
+        item 1
+      </div>
+      <div>
+        item 2
+      </div>
+      <div>
+        item 3
+      </div>
+    </div>
   </div>
 </template>
 
@@ -8,7 +21,7 @@
 
 .NavDropdown {
   position: absolute;
-  @apply bg-white h-12 top-6;
+  @apply top-6 rounded border-2 bg-gray-800 w-48 left-1/2 transform -translate-x-1/2;
   visibility: hidden;
 }
 

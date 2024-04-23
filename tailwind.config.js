@@ -9,7 +9,14 @@ export default {
     './app.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: {
+          '800': 'rgb(15,23,42)',
+          '900': '#020420',
+        }
+      },
+    },
   },
   plugins: [],
 }
