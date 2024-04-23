@@ -13,21 +13,21 @@ import { PhCaretDown } from '@phosphor-icons/vue';
           <li>
             <NuxtLink to="/docs">
             Docs
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/integrations">
             Integrations
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/resources">
             Resources
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
@@ -39,7 +39,7 @@ import { PhCaretDown } from '@phosphor-icons/vue';
           <li>
             <NuxtLink to="/enterprise">
             Enterprise
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
+              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
@@ -66,5 +66,8 @@ header li:hover .NavDropdown {
 }
 header li a {
   @apply px-3 text-sm/6 font-semibold flex items-center gap-1;
+}
+header li a:hover svg {
+  @apply rotate-180
 }
 </style>
