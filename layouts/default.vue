@@ -103,8 +103,42 @@ const tableOfContentsLinks = [
       </div>
     </main>
     <footer class="relative">
-      <div class="border-t"></div>
-      <div class="border-t">Copyright © 2016-2024 Nuxt - MIT License</div>
+      <div class="border-t border-gray-200">
+        <div class="FooterLinksContainer mx-auto px-4 lg:px-8 py-8 lg:py-12 max-w-7xl flex flex-col lg:grid grid-flow-col auto-cols-fr gap-8">
+          <div class="FooterCommunityLinksContainer">
+            <h3>Community</h3>
+            <ul>
+              <li>
+                <a href="https://nuxters.nuxt.com/">Nuxters</a>
+              </li>
+              <li>
+                <a href="https://nuxters.nuxt.com/">Nuxt on GitHub</a>
+              </li>
+              <li>
+                <a href="https://nuxters.nuxt.com/">Team</a>
+              </li>
+              <li>
+                <a href="https://nuxters.nuxt.com/">Design Kit</a>
+              </li>
+            </ul>
+          </div>
+          <div class="FooterEnterpriseLinksContainer">
+            <h3>Enterprise</h3>
+          </div>
+          <div class="FooterSolutionsLinksContainer">
+            <h3>Solutions</h3>
+          </div>
+        </div>
+        <div class="SubscribeToNewsletter">
+          Newsletter!
+        </div>
+      </div>
+      <div class="FooterBase border-t">
+        <div class="mx-auto max-w-7xl lg:flex lg:items-center lg:justify-between py-6">
+          <p>Copyright © 2016-2024 Nuxt - MIT License</p>
+          <div>X, Discord, GitHub</div>
+        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -130,4 +164,13 @@ main {
     @apply my-2;
   }
 }
+footer {
+  h3 {
+    @apply text-sm/6 font-semibold text-white
+  }
+  a {
+    @apply text-sm
+  }
+}
 </style>
+
