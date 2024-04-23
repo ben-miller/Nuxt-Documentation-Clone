@@ -1,5 +1,5 @@
 <script setup>
-import { PhCaretDown } from '@phosphor-icons/vue';
+import { PhCaretDown, PhMagnifyingGlass, PhMoon } from '@phosphor-icons/vue';
 </script>
 
 <template>
@@ -61,8 +61,15 @@ import { PhCaretDown } from '@phosphor-icons/vue';
           </li>
         </ul>
       </div>
-      <div class="UpperRightButtons">
-        Search, Dark Mode, GitHub
+      <div class="UpperRightButtons relative inline-flex">
+        <span class="relative inline-flex gap-x-1.5 p-1.5">
+        <ph-magnifying-glass :size="32" />
+        </span>
+        <span class="relative inline-flex px-2.5 py-1.5">
+        <ph-moon :size="32" />
+        </span>
+        <span class="relative inline-flex p-1.5">
+        </span>
       </div>
     </div>
   </header>
