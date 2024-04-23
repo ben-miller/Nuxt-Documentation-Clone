@@ -1,5 +1,5 @@
 <template>
-  <header class="h-[--header-height] sticky top-0">
+  <header class="h-[--header-height] sticky top-0 z-50 backdrop-blur">
     <ul>
       <li>
         <NuxtLink to="/">Nuxt</NuxtLink>
