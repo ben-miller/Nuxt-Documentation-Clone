@@ -60,6 +60,27 @@ const tableOfContentsLinks = [
   { id: '', text: 'Modular', href: '' },
   { id: '', text: 'Architecture', href: '' },
 ];
+
+const communityLinks = [
+  { id: '', text: 'Nuxters', href: '' },
+  { id: '', text: 'Nuxt on GitHub', href: '' },
+  { id: '', text: 'Team', href: '' },
+  { id: '', text: 'Design Kit', href: '' },
+];
+
+const enterpriseLinks = [
+  { id: '', text: 'Automation and Conventions', href: '' },
+  { id: '', text: 'Server-side rendering', href: '' },
+  { id: '', text: 'Server engine', href: '' },
+  { id: '', text: 'Production-ready', href: '' },
+];
+
+const solutionsLinks = [
+  { id: '', text: 'Nuxt Content', href: '' },
+  { id: '', text: 'Nuxt DevTools', href: '' },
+  { id: '', text: 'Nuxt Image', href: '' },
+  { id: '', text: 'Nuxt UI', href: '' },
+];
 </script>
 
 <template>
@@ -106,27 +127,13 @@ const tableOfContentsLinks = [
       <div class="border-t border-gray-200">
         <div class="FooterLinksContainer mx-auto px-4 lg:px-8 py-8 lg:py-12 max-w-7xl flex flex-col lg:grid grid-flow-col auto-cols-fr gap-8">
           <div class="FooterCommunityLinksContainer">
-            <h3>Community</h3>
-            <ul>
-              <li>
-                <a href="https://nuxters.nuxt.com/">Nuxters</a>
-              </li>
-              <li>
-                <a href="https://nuxters.nuxt.com/">Nuxt on GitHub</a>
-              </li>
-              <li>
-                <a href="https://nuxters.nuxt.com/">Team</a>
-              </li>
-              <li>
-                <a href="https://nuxters.nuxt.com/">Design Kit</a>
-              </li>
-            </ul>
+            <FooterLinkList :title="Community", :links="communityLinks" />
           </div>
           <div class="FooterEnterpriseLinksContainer">
-            <h3>Enterprise</h3>
+            <FooterLinkList :title="Enterprise", :links="enterpriseLinks" />
           </div>
           <div class="FooterSolutionsLinksContainer">
-            <h3>Solutions</h3>
+            <FooterLinkList :title="Solutions", :links="solutionsLinks" />
           </div>
         </div>
         <div class="SubscribeToNewsletter">
