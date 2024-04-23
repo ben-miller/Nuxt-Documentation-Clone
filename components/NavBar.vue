@@ -15,18 +15,21 @@ import { PhCaretDown } from '@phosphor-icons/vue';
             Docs
               <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
             </NuxtLink>
+            <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/integrations">
             Integrations
               <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
             </NuxtLink>
+            <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/resources">
             Resources
               <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
             </NuxtLink>
+            <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/showcase">
@@ -38,6 +41,7 @@ import { PhCaretDown } from '@phosphor-icons/vue';
             Enterprise
               <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4" />
             </NuxtLink>
+            <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/blog">
@@ -54,6 +58,12 @@ import { PhCaretDown } from '@phosphor-icons/vue';
 </template>
 
 <style scoped>
+header li {
+  position: relative;
+}
+header li:hover .NavDropdown {
+  visibility: visible;
+}
 header li a {
   @apply px-3 text-sm/6 font-semibold flex items-center gap-1;
 }
