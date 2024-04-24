@@ -1,5 +1,6 @@
 <script setup>
 import { PhCaretDown, PhMagnifyingGlass, PhMoon } from '@phosphor-icons/vue';
+import { GitHubIcon } from 'vue3-simple-icons';
 </script>
 
 <template>
@@ -63,12 +64,13 @@ import { PhCaretDown, PhMagnifyingGlass, PhMoon } from '@phosphor-icons/vue';
       </div>
       <div class="UpperRightButtons relative inline-flex">
         <span class="relative inline-flex gap-x-1.5 p-1.5">
-        <ph-magnifying-glass :size="32" />
+          <ph-magnifying-glass :size="32" />
         </span>
         <span class="relative inline-flex px-2.5 py-1.5">
-        <ph-moon :size="32" />
+          <ph-moon :size="32" />
         </span>
         <span class="relative inline-flex p-1.5">
+          <git-hub-icon />
         </span>
       </div>
     </div>

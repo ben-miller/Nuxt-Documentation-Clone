@@ -29,6 +29,9 @@ dependencies:
   vue-router:
     specifier: ^4.3.0
     version: 4.3.0(vue@3.4.22)
+  vue3-simple-icons:
+    specifier: ^11.13.0
+    version: 11.13.0
 
 devDependencies:
   '@nuxtjs/color-mode':
@@ -7160,6 +7163,14 @@ packages:
       vue: 3.4.22
       vue-observe-visibility: 2.0.0-alpha.1(vue@3.4.22)
       vue-resize: 2.0.0-alpha.1(vue@3.4.22)
+
+  /vue3-simple-icons@11.13.0:
+    resolution: {integrity: sha512-m323zriUcFWXg3QYb88kMcWhxjsStn3CqWyClXWXbqD8x7dJ0tUTCpUM6zSLxPKshIMz0+2bKnyiTP3IJ6ZNPg==}
+    dependencies:
+      vue: 3.4.22
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /vue@3.4.22:
     resolution: {integrity: sha512-CIx7NiP+n5WHBCG/fDNaUPP4qbQ5CIa8XIHZE3HpfS/rb2vmSIsp74BxsZyrrGKF0vHW3GoToqP3l0hzrMTecw==}
