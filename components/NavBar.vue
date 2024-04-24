@@ -23,23 +23,23 @@ import { GitHubIcon } from 'vue3-simple-icons';
       <div class="HeaderLinks">
         <ul class="lg:flex">
           <li>
-            <NuxtLink to="/docs" class="text-nuxt-green-400">
+            <NuxtLink to="/docs" class="text-primary-400">
             Docs
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
+              <PhCaretDown :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/integrations">
             Integrations
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
+              <PhCaretDown :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
           <li>
             <NuxtLink to="/resources">
             Resources
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
+              <PhCaretDown :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
@@ -51,7 +51,7 @@ import { GitHubIcon } from 'vue3-simple-icons';
           <li>
             <NuxtLink to="/enterprise">
             Enterprise
-              <ph-caret-down :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
+              <PhCaretDown :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
             <NavDropdown />
           </li>
@@ -71,7 +71,7 @@ import { GitHubIcon } from 'vue3-simple-icons';
         </span>
         <a href="">
           <span class="relative inline-flex p-1.5 gap-x-1.5">
-            <git-hub-icon class="h-5 w-5" />
+            <GitHubIcon class="h-5 w-5" />
               <span class="">51.9K</span>
           </span>
         </a>
