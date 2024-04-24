@@ -62,16 +62,19 @@ import { GitHubIcon } from 'vue3-simple-icons';
           </li>
         </ul>
       </div>
-      <div class="UpperRightButtons relative inline-flex">
+      <div class="UpperRightButtons relative inline-flex text-sm">
         <span class="relative inline-flex gap-x-1.5 p-1.5">
-          <ph-magnifying-glass :size="32" />
+          <ph-magnifying-glass class="h-5 w-5" />
         </span>
         <span class="relative inline-flex px-2.5 py-1.5">
-          <ph-moon :size="32" />
+          <ph-moon class="h-5 w-5" />
         </span>
-        <span class="relative inline-flex p-1.5">
-          <git-hub-icon />
-        </span>
+        <a href="">
+          <span class="relative inline-flex p-1.5 gap-x-1.5">
+            <git-hub-icon class="h-5 w-5" />
+              <span class="">51.9K</span>
+          </span>
+        </a>
       </div>
     </div>
   </header>
