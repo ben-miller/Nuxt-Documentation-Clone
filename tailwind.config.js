@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const { iconsPlugin, getIconCollections } = require("@egoist/tailwindcss-icons");
+
 export default {
   content: [
     './components/**/*.{js,vue,ts}',
@@ -23,5 +26,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    iconsPlugin({
+      collections: getIconCollections(["ph"]),
+    }),
+  ],
 }

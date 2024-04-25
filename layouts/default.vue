@@ -1,30 +1,30 @@
 <script setup>
 const docsNavLinks = [
-  { id: 'get_started', text: 'Get Started', href: 'https://nuxt.com/docs/getting-started/introduction' },
-  { id: '', text: 'Guide', href: '' },
-  { id: '', text: 'API', href: '' },
-  { id: '', text: 'Examples', href: '' },
-  { id: '', text: 'Community', href: '' },
+  { id: 'get_started', text: 'Get Started', href: 'https://nuxt.com/docs/getting-started/introduction', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Guide',                  href: '',                                                   icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'API',                    href: '',                                                   icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Examples',               href: '',                                                   icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Community',              href: '',                                                   icon: 'i-ph-rocket-launch-duotone' },
   ];
 
 const docsGettingStartedLinks = [
-  { id: '', text: 'Introduction', href: '' },
-  { id: '', text: 'Installation', href: '' },
-  { id: '', text: 'Configuration', href: '' },
-  { id: '', text: 'Views', href: '' },
-  { id: '', text: 'Assets', href: '' },
-  { id: '', text: 'Styling', href: '' },
-  { id: '', text: 'Routing', href: '' },
-  { id: '', text: 'SEO and Meta', href: '' },
-  { id: '', text: 'Transitions', href: '' },
-  { id: '', text: 'Data fetching', href: '' },
-  { id: '', text: 'State Management', href: '' },
-  { id: '', text: 'Error Handling', href: '' },
-  { id: '', text: 'Server', href: '' },
-  { id: '', text: 'Layers', href: '' },
-  { id: '', text: 'Deployment', href: '' },
-  { id: '', text: 'Testing', href: '' },
-  { id: '', text: 'Upgrade Guide', href: '' },
+  { id: '', text: 'Introduction',     href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Installation',     href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Configuration',    href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Views',            href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Assets',           href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Styling',          href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Routing',          href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'SEO and Meta',     href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Transitions',      href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Data fetching',    href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'State Management', href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Error Handling',   href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Server',           href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Layers',           href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Deployment',       href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Testing',          href: '', icon: 'i-ph-rocket-launch-duotone' },
+  { id: '', text: 'Upgrade Guide',    href: '', icon: 'i-ph-rocket-launch-duotone' },
 ];
 
 const tableOfContentsLinks = [
@@ -92,16 +92,22 @@ const solutionsLinks = [
           <div class="lg:col-span-2">
             <aside class="overflow-y-auto max-h-[calc(100vh-var(--header-height))] top-[var(--header-height)] sticky">
               <div>
-                <li v-for="item in docsNavLinks">
-                  {{ item.text }}
-                </li>
+                <ul>
+                  <li v-for="item in docsNavLinks">
+                    <span class="w-5 h-5" :class="item.icon"></span>
+                    {{ item.text }}
+                  </li>
+                </ul>
                 <div class="flex mb-6">
                   <div class="flex border-gray-800 w-full border-t border-dashed"></div>
                 </div>
                 <nav>
-                  <li v-for="item in docsGettingStartedLinks">
-                    {{ item.text }}
-                  </li>
+                  <ul>
+                    <li v-for="item in docsGettingStartedLinks">
+                      <span class="w-5 h-5" :class="item.icon"></span>
+                      {{ item.text }}
+                    </li>
+                  </ul>
                 </nav>
               </div>
             </aside>
