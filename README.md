@@ -9,3 +9,8 @@ I chose this as a starter project because:
 4. It's a simple UI, so it won't be an overwhelming first project.
   
 It's still very much a work-in-progress, and the code is trash, but it's been a productive learning experience so far.
+
+---
+
+![](screenshot.png)
+
