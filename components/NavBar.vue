@@ -1,6 +1,14 @@
 <script setup>
 import { PhCaretDown, PhMagnifyingGlass, PhMoon } from '@phosphor-icons/vue';
 import { GitHubIcon } from 'vue3-simple-icons';
+
+const route = useRoute();
+
+console.log('Current Route:', route);
+console.log('Path:', route.path);
+console.log('Query Parameters:', route.query);
+console.log('Route Parameters:', route.params);
+
 </script>
 
 <template>
@@ -23,7 +31,7 @@ import { GitHubIcon } from 'vue3-simple-icons';
       <div class="HeaderLinks">
         <ul class="lg:flex">
           <li>
-            <NuxtLink to="/docs" class="text-primary-400">
+            <NuxtLink to="/docs" activeClass="text-primary-400">
             Docs
               <PhCaretDown :size="16" class="flex-shrink-0 w-4 h-4 transform transition-transform duration-200" />
             </NuxtLink>
