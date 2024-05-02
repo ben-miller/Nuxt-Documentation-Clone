@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Nuxt documentation clone
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Currently building a clone, using Nuxt & Vue, of Nuxt's [getting started documentation](https://nuxt.com/docs/getting-started/introduction). My purpose is to both brush up on Javascript, HTML & CSS, as well as introduce myself to the Vue and Nuxt frameworks.
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+I chose this as a starter project because:
+1. Cloning something that exists keeps the cognitive load to a minimum, and makes the direction and sense of progress very clear.
+2. The site is written in Nuxt & Vue, allowing me to cheat, when necessary, by referencing the browser dev utils and git repo.
+3. The site looks like it was designed by someone who cares, so I may pick up some nice UI tricks along the way.
+4. It's a simple UI, so it won't be an overwhelming first project.
+  
+It's still very much a work-in-progress, and the code is trash, but it's been a productive learning experience so far.
